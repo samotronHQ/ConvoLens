@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConvoLens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <header class="topbar">
+      <div>
+        <h1>ConvoLens ✧</h1>
+        <p>understand what's actually going on.</p>
+      </div>
+
+      <nav>
+        <a href="#">about</a>
+        <a href="#">how it works</a>
+      </nav>
+    </header>
+
+    <section class="badge">
+      GenAI Relationship Insight Tool developed by
+      <span class="hover-text">
+        someone who struggles with mixed signals just as much
+        <span class="hover-hidden">it’s me, dio.</span>
+      </span>
+    </section>
+
+    <section class="input-area">
+      <aside class="input-note">
+        <h2>Paste a <span>conversation.</span></h2>
+        <p>I’ll help you read the room — effort, tone, tension, and the things left unsaid.</p>
+        <div class="arrow">↘</div>
+      </aside>
+
+      <div class="input-box">
+        <textarea id="chatInput" placeholder="a: You never pick up my calls&#10;b: im sorry&#10;gurt: yo"></textarea>
+        <button onclick="analyzeChat()">analyze →</button>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="findings">
+      <p class="finding-title">here’s <span>what i found.</span></p>
+      <section id="results" class="results hidden"></section>
+    </section>
+
+    <footer>
+      built as a GenAI experiment. not therapy, not a verdict — just pattern spotting.
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
