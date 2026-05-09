@@ -37,7 +37,7 @@ Return this exact JSON format:
       "evidence": "exact text from chat"
     }}
   ],
-  "green_flags": [
+  "green_flags": []
     {{
       "label": "positive behavior label",
       "explanation": "why this is positive",
@@ -63,4 +63,7 @@ Rules:
 - least_engaged must be the participant with minimal contribution.
 - green_flags must represent genuinely positive behaviors only.
 - Use natural, non-robotic explanations.
+- Do NOT include comments like /* ... */ inside JSON.
+- If there are no green flags, return "green_flags": [].
+- If there are no red flags, return "red_flags": [].
 """

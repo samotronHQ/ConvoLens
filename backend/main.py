@@ -39,7 +39,7 @@ def analyze_chat(data: ChatInput):
 
     ai_output = response.choices[0].message.content.strip()
 
-    # 🔥 CLEAN AI OUTPUT
+    
     ai_output = ai_output.replace(": None", ': "None detected"')
     ai_output = ai_output.replace(": null", ': "None detected"')
 
@@ -48,6 +48,8 @@ def analyze_chat(data: ChatInput):
         den = float(match.group(2))
         return str(round(num / den, 2))
 
+    
+    ai_output = re.sub(r'/\*.*?\*/', '', ai_output, flags=re.DOTALL)
     ai_output = re.sub(r'(\d+)\s*/\s*(\d+)', fix_fraction, ai_output)
 
     try:
