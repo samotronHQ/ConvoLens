@@ -15,11 +15,11 @@ Return this exact JSON format:
   "response_effort": 0.7,
   "emotional_tone": {{
     "A": {{
-      "tone": "short tone label",
+      "tone": "affectionate",
       "explanation": "natural human explanation"
     }},
     "B": {{
-      "tone": "short tone label",
+      "tone": "reciprocating",
       "explanation": "natural human explanation"
     }}
   }},
@@ -73,4 +73,5 @@ Rules:
 - least_engaged must be the participant with minimal contribution.
 - green_flags must represent genuinely positive or mildly positive behaviors only.
 - Use natural, non-robotic explanations.
+- Do NOT copy placeholder words like "short tone label" or "natural human explanation". Replace them with real analysis.
 """
