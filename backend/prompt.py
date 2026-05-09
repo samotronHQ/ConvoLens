@@ -37,13 +37,13 @@ Return this exact JSON format:
       "evidence": "exact text from chat"
     }}
   ],
-  "green_flags": []
-    {{
-      "label": "positive behavior label",
-      "explanation": "why this is positive",
-      "evidence": "exact text from chat"
-    }}
-  ],
+  "green_flags": [
+  {
+    "label": "positive behavior label",
+    "explanation": "why this is positive (may be a slightly generous interpretation)",
+    "evidence": "exact text from chat"
+  }
+],
   "communication_pattern": {{
     "pattern": "short descriptive label",
     "explanation": "overall interaction pattern"
@@ -61,9 +61,15 @@ Rules:
 - Return ONLY valid JSON.
 - Do NOT wrap output in markdown.
 - least_engaged must be the participant with minimal contribution.
-- green_flags must represent genuinely positive behaviors only.
+- green_flags can be generous, but make sure u mention its generosity.
 - Use natural, non-robotic explanations.
 - Do NOT include comments like /* ... */ inside JSON.
 - If there are no green flags, return "green_flags": [].
 - If there are no red flags, return "red_flags": [].
+- Be slightly generous when identifying green_flags, especially in neutral or ambiguous interactions.
+- Green flags can include small positives like effort to respond, engagement, or maintaining conversation.
+- If green_flags are inferred generously, explicitly mention in the explanation that the interpretation is slightly generous.
+- Do NOT invent strong positives if none exist — only mild or tentative positives.
+- Keep every explanation under 20 words.
+- Keep summary under 25 words.
 """

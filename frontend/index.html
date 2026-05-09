@@ -16,8 +16,8 @@
       </div>
 
       <nav>
-        <a href="#">about</a>
-        <a href="#">how it works</a>
+        <a href="#" onclick="toggleAbout()">about</a>
+        <a href="#how">how it works</a>
       </nav>
     </header>
 
@@ -25,14 +25,14 @@
       GenAI Relationship Insight Tool developed by
       <span class="hover-text">
         someone who struggles with mixed signals just as much
-        <span class="hover-hidden">it’s me, dio.</span>
+        <span class="hover-hidden">it's me, dio.</span>
       </span>
     </section>
 
     <section class="input-area">
       <aside class="input-note">
         <h2>Paste a <span>conversation.</span></h2>
-        <p>I’ll help you read the room — effort, tone, tension, and the things left unsaid.</p>
+        <p>I'll help you read the room — effort, tone, tension, and the things left unsaid.</p>
         <div class="arrow">↘</div>
       </aside>
 
@@ -45,9 +45,119 @@
     <div class="divider"></div>
 
     <section class="findings">
-      <p class="finding-title">here’s <span>what i found.</span></p>
+      <p class="finding-title">here's <span>what i found.</span></p>
       <section id="results" class="results hidden"></section>
     </section>
+    <section id="about" class="about-section hidden-section">
+  <h2>about</h2>
+
+  <p>Hello! I'm Sam — a CSE grad (if that wasn't obvious already).</p>
+
+  <p>I like building things that are fun, relatable, and scalable.</p>
+
+  <p>
+    ConvoLens started as a small experiment to understand the underlying tones behind conversations.
+    I've always been drawn to patterns, numbers, and the context behind every word — and that's what led me here.
+  </p>
+
+  <p>
+    I've also struggled with reading tone in conversations — tone tags helped, but I wanted something that could go a bit deeper.
+  </p>
+
+  <p>
+    It's not meant to give you answers or diagnose anything. Think of it more like a catalyst for your own hypotheses.
+    Tip: treat this as a second opinion, not a verdict.
+  </p>
+
+  <p>I hope you enjoy using this as much as I enjoyed building it.</p>
+
+  <p>
+  You can check out my other (not-so-cool or fun) projects too — 
+  <a href="https://github.com/samotronHQ" target="_blank" class="github-link">
+    github →
+  </a>
+  and let me know what else I should add here.
+</p>
+
+  <p class="about-note">
+    Also… there are two surprise easter eggs in here :)
+  </p>
+
+  <pre class="ascii-cat">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣴⠚⡄⢫⠉⢩⠃⠀⣰⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠠⡞⠳⡜⠦⠚⠘⠒⠋⠀⢰⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠚⠁⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣤⣄⣀⡀⣠⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢸⠉⠉⢰⠂
+⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠟⠛⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⡇⠀⡰⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⠃⠀⠀⢰⡆⢻⣿⣿⣿⣿⣿⡿⠛⠛⠻⣿⣿⣿⣿⠀⠀⠀⠀⢰⠁⡰⠁⠀⠀
+⠀⠀⠀⠀⣶⣦⣤⠘⣿⣿⣆⠀⠀⢿⠇⣼⣿⣿⣿⣿⠛⢸⡇⠀⠀⠙⣿⣿⣿⣇⠀⠀⠀⠈⠒⠁⠀⠀⠀
+⠀⠀⠀⠀⢀⣀⣁⠀⠻⣿⣿⣷⣦⣤⣶⣿⣿⣿⣿⣇⡀⣾⠃⠀⠀⢠⣿⣿⣿⡇⠀⡔⠒⠲⡄⠀⠀⠀⠀
+⠀⠀⠀⠘⠛⠋⠉⠀⠀⠈⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣤⣴⣾⣿⣿⠟⠀⠀⠱⠤⣀⠇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⢀⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠀⠀⣀⡀⠀⠉⠙⠓⠀⠀⠀⠀⠀⠀⠀
+⠀⡗⡤⡲⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣴⣫⢸⢷⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  </pre>
+  <pre class="wolf">
+    
+  
+            .-'''''-.
+          .'         `.
+         :             :
+        :               :
+        :      _/|      :
+         :   =/_/      :
+          `._/ |     .'
+           /  ,|...-'
+        \_/^\/||__
+     _/~  `""~`"` \_
+  __/  -'/  `-._ `\_\__
+/jgs  /-'`  `\   \  \-.\
+------------------------------------------------
+
+  </pre>
+</section>
+<section id="how" class="how-section">
+  <h2>how it works</h2>
+
+  <div class="steps">
+    <div class="step">
+      <span>01</span>
+      <h3>paste a conversation</h3>
+      <p>
+        Drop in a chat snippet with speakers like A, B, or names.
+        ConvoLens reads who is saying what.
+      </p>
+    </div>
+
+    <div class="step">
+      <span>02</span>
+      <h3>the model reads the room</h3>
+      <p>
+        It looks for emotional tone, response effort, imbalance,
+        communication patterns, red flags, and green flags.
+      </p>
+    </div>
+
+    <div class="step">
+      <span>03</span>
+      <h3>you get a breakdown</h3>
+      <p>
+        The output is structured into notes so you can see the pattern,
+        evidence, and possible interpretation clearly.
+      </p>
+    </div>
+  </div>
+
+  <p class="how-note">
+    under the hood: FastAPI + Groq/LLaMA + prompt engineering + structured JSON parsing.
+  </p>
+</section>
 
     <footer>
       built as a GenAI experiment. not therapy, not a verdict — just pattern spotting.

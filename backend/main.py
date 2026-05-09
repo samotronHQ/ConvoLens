@@ -30,12 +30,14 @@ def analyze_chat(data: ChatInput):
     prompt = build_prompt(data.chat)
 
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[
-            {"role": "system", "content": "Return ONLY valid JSON."},
-            {"role": "user", "content": prompt}
-        ]
-    )
+    model="llama-3.1-8b-instant",
+    messages=[
+        {"role": "system", "content": "Return ONLY valid JSON."},
+        {"role": "user", "content": prompt}
+    ],
+    temperature=0.2,
+    max_tokens=1200
+)
 
     ai_output = response.choices[0].message.content.strip()
 
@@ -61,7 +63,7 @@ def analyze_chat(data: ChatInput):
 
         return {
             "analysis": {
-                "summary": ai_output if ai_output else "AI returned empty response",
+                "summary": "Your stand is too strong. Try a shorter chat snippet.",
                 "emotional_tone": {},
                 "response_effort": 0,
                 "red_flags": [],

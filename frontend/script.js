@@ -122,4 +122,15 @@ async function analyzeChat() {
       </div>
     `;
   }
+
+}
+function toggleAbout() {
+  const section = document.getElementById("about");
+
+  if (section.classList.contains("hidden-section")) {
+    section.classList.remove("hidden-section");
+    section.scrollIntoView({ behavior: "smooth" });
+  } else {
+    section.classList.add("hidden-section");
+  }
 }
