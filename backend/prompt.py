@@ -14,14 +14,15 @@ Return this exact JSON format:
   "initiation_ratio": 0.5,
   "response_effort": 0.7,
   "emotional_tone": {{
-    "A": {{
-      "tone": "affectionate",
-      "explanation": "natural human explanation"
-    }},
-    "B": {{
-      "tone": "reciprocating",
-      "explanation": "natural human explanation"
-    }}
+  "A": {{
+    "tone": "affectionate",
+    "explanation": "A expresses warmth directly"
+  }},
+  "B": {{
+    "tone": "guarded",
+    "explanation": "B responds cautiously instead of matching the warmth"
+  }}
+}},
   }},
   "imbalance": {{
     "status": "None/Low/Medium/High",
@@ -74,4 +75,5 @@ Rules:
 - green_flags must represent genuinely positive or mildly positive behaviors only.
 - Use natural, non-robotic explanations.
 - Do NOT copy placeholder words like "short tone label" or "natural human explanation". Replace them with real analysis.
+- Never output example placeholder values. Always replace example values with analysis from the actual chat.
 """
