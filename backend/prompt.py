@@ -38,11 +38,11 @@ Return this exact JSON format:
     }}
   ],
   "green_flags": [
-  {
-    "label": "positive behavior label",
-    "explanation": "why this is positive (may be a slightly generous interpretation)",
-    "evidence": "exact text from chat"
-  }
+  {{
+  "label": "positive behavior label",
+  "explanation": "why this is positive (may be a slightly generous interpretation)",
+  "evidence": "exact text from chat"
+}}
 ],
   "communication_pattern": {{
     "pattern": "short descriptive label",
